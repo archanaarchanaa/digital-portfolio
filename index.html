@@ -45,10 +45,13 @@
         }
         .section {
             padding: 1rem;
-
-             @media (max-width: 768px) {
+            
+        }
+        @media (max-width: 768px) {
             header {
                 font-size: 24px;
+                
+                padding-top: 120px;
             }
             nav {
                 flex-direction: column;
@@ -58,20 +61,25 @@
                 margin: 1rem 0;
             }
             .profile-photo {
-                width: 30px;
-                height: 30px;
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 50%;    
             }
+            
             .section {
                 padding: 1rem;
             }
-        }
-            
         }
     </style>
 </head>
 <body>
     <header>
-        <img class="profile-photo" src="archana.jpeg" alt="Your Name">
+       <div class="pp" ><img class="profile-photo" src="archana.jpeg" alt="Your Name"> </div>
 
         <h1>A Archana</h1>
     </header>
